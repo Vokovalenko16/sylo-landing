@@ -2,6 +2,7 @@ import * as React from 'react'
 import * as ReactDOM from 'react-dom'
 import { AppRouter } from './router'
 import 'bootstrap/dist/css/bootstrap.css'
+import './components/Landing/LandingPage'
 import WebFont from 'webfontloader'
 
 WebFont.load({
