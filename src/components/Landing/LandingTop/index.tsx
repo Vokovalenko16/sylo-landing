@@ -87,7 +87,7 @@ const LandingTop: React.StatelessComponent<{}> = () => {
         >
           <img src={middle_mountain_effect_landing} className="" />
         </Animated>
-        <Parallax className="bottom_mountain" y={[0, -25]}>
+        <Parallax className="bottom_mountain" y={[5, -25]}>
           <img src={bottom_mountain_effect_landing} className="" />
         </Parallax>
         <Animated
@@ -128,7 +128,9 @@ const LandingTop: React.StatelessComponent<{}> = () => {
           isVisible={true}
           className="lady"
         >
-          <img src={lady} className="" />
+          <Parallax className="bottom_mountain" y={[0, -25]}>
+            <img src={lady} className="" />
+          </Parallax>
         </Animated>
       </div>
     </div>
