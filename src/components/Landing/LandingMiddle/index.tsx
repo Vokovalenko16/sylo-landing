@@ -1,5 +1,6 @@
 import * as React from 'react'
 import { ResponsiveImage, ResponsiveImageSize } from 'react-responsive-image'
+import ScrollAnimation from 'react-animate-on-scroll'
 
 import digital_middle_landing_mobile from '../../../images/digital_middle_landing_mobile.png'
 import digital_middle_landing_landscape from '../../../images/digital_middle_landing_landscape.png'
@@ -10,7 +11,8 @@ import '../../../styles/global.scss'
 const LandingMiddle: React.StatelessComponent<{}> = () => {
   return (
     <div className="LandingMiddle">
-      <div className="text_area">
+      <ScrollAnimation animateIn="fadeIn" delay={300} className="text_area">
+        {/* <div className="text_area"> */}
         <div className="heading">
           Your best digital life,
           <br /> powered by <span className="color_red">Sylo</span>
@@ -25,7 +27,8 @@ const LandingMiddle: React.StatelessComponent<{}> = () => {
           <br />
           From design to data, you come first.
         </div>
-      </div>
+        {/* </div> */}
+      </ScrollAnimation>
       <ResponsiveImage className="phone_img">
         <ResponsiveImageSize
           default
