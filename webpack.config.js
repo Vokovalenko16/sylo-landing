@@ -1,13 +1,13 @@
-var path = require('path')
-var HtmlWebpackPlugin = require('html-webpack-plugin')
-let MiniCssExtractPlugin = require('mini-css-extract-plugin')
-var webpack = require('webpack')
-var basePath = __dirname
+var path = require('path');
+var HtmlWebpackPlugin = require('html-webpack-plugin');
+let MiniCssExtractPlugin = require('mini-css-extract-plugin');
+var webpack = require('webpack');
+var basePath = __dirname;
 
 module.exports = {
   context: path.join(basePath, 'src'),
   resolve: {
-    extensions: ['.js', '.ts', '.tsx', 'scss', 'css']
+    extensions: ['.js', '.ts', '.tsx', 'scss', 'css', '.json']
   },
   entry: {
     app: './index.tsx',
@@ -72,4 +72,4 @@ module.exports = {
       chunkFilename: '[id].css'
     })
   ]
-}
+};
