@@ -1,0 +1,39 @@
+@import 'node_modules/bootstrap/scss/bootstrap';
+
+.DownloadWidget {
+  .caption {
+    display: flex;
+    justify-content: center;
+    img {
+      transform: translate(20px, 0);
+    }
+  }
+  .stores {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 30px;
+    flex-direction: column;
+    @include media-breakpoint-down(xs) {
+      & > :first-child {
+        margin-bottom: 25px;
+      }
+    }
+    @include media-breakpoint-up(sm) {
+      flex-direction: row;
+      & > :first-child {
+        margin-right: 9px;
+      }
+      & > :last-child {
+        margin-left: 9px;
+      }
+    }
+    img {
+      &:hover {
+        filter: invert(60%) sepia(32%) saturate(4391%) hue-rotate(326deg)
+          brightness(91%) contrast(85%);
+      }
+    }
+  }
+  padding-bottom: 118px;
+}

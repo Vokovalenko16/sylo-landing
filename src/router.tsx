@@ -7,10 +7,12 @@ import { render } from 'react-dom';
 
 import Lottie from 'react-lottie';
 import animationData from './images/sylo-logo-animation.json';
+import Footer from './components/Footer';
 
 interface IState {
   isLoading: boolean;
 }
+
 export class AppRouter extends React.Component<any, IState> {
   constructor(props: any) {
     super(props);
@@ -45,6 +47,7 @@ export class AppRouter extends React.Component<any, IState> {
             <Route component={LandingPage} />
           )}
         </HashRouter>
+        <Footer />
       </ParallaxProvider>
     );
   }
